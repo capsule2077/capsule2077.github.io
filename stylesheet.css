@@ -1,0 +1,305 @@
+/* ========================================
+   Longfei Liu - Personal Website Styles
+   ======================================== */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #54afe9;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3a8bc9;
+}
+
+/* Header Section */
+.header {
+    margin-bottom: 40px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.header-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.profile-info {
+    flex: 1.5;
+}
+
+.name {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.email {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.bio {
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #f0f7ff;
+    transform: translateY(-2px);
+}
+
+.profile-photo {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-photo img {
+    width: 80%;
+    max-width: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 40px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.section:nth-child(2) { animation-delay: 0.1s; }
+.section:nth-child(3) { animation-delay: 0.2s; }
+.section:nth-child(4) { animation-delay: 0.3s; }
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section hr {
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+/* News Section */
+.news-list,
+.others-list {
+    list-style: none;
+}
+
+.news-item,
+.others-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.news-item:hover,
+.others-item:hover {
+    background-color: #f0f7ff;
+    transform: translateX(5px);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.news-content {
+    display: inline;
+}
+
+/* Research Section */
+.research-notes {
+    margin-bottom: 25px;
+    color: #666;
+    font-size: 14px;
+}
+
+.highlight {
+    background-color: #fff3cd;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.research-papers {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.paper {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.paper:hover {
+    background-color: #f0f7ff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.paper-image {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.paper-content h3 {
+    margin-bottom: 10px;
+}
+
+.paper-content h3 a {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.paper-content h3 a:hover {
+    color: #54afe9;
+}
+
+.authors {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.venue {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+.code-link {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #54afe9;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.code-link:hover {
+    background-color: #3a8bc9;
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* Footer */
+.footer {
+    text-align: right;
+    font-size: 12px;
+    color: #999;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-info {
+        order: 2;
+    }
+    
+    .profile-photo {
+        order: 1;
+        margin-bottom: 20px;
+    }
+    
+    .paper {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .social-link {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .social-links,
+    .footer {
+        display: none;
+    }
+    
+    .section {
+        break-inside: avoid;
+    }
+}
