@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         const countEl = link.querySelector('.star-count');
                         if (countEl) {
                             // Format number with commas if it's large
-                            countEl.textContent = '★ ' + data.stargazers_count.toLocaleString();
+                            countEl.textContent = data.stargazers_count.toLocaleString();
                         }
                     }
                 })

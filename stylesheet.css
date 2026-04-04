@@ -15,6 +15,7 @@
     --color-accent-blue: #0070f3;
     --color-accent-blue-hover: #0056b3;
     --color-accent-dark: #24292e;
+    --color-accent-light: rgb(255, 255, 255);
     
     /* Colors - UI Elements */
     --color-border: #e5e7eb;
@@ -456,14 +457,16 @@ a {
     letter-spacing: 0.05em;
 }
 
-.venue-badge.iclr {
+.venue-badge.accept {
     background-color: rgba(16, 185, 129, 0.1);
     color: #059669;
+    font-size: 1rem;
 }
 
 .venue-badge.arxiv {
     background-color: rgba(239, 68, 68, 0.1);
     color: #dc2626;
+    font-size: 1rem;
 }
 
 /* Actions & Buttons */
@@ -478,8 +481,8 @@ a {
 .btn-primary {
     display: inline-flex;
     align-items: stretch;
-    background-color: var(--color-accent-dark);
-    color: white;
+    background-color: var(--color-accent-light);
+    color: black;
     border-radius: var(--radius-full);
     font-size: 0.875rem;
     font-weight: 500;
@@ -497,13 +500,13 @@ a {
     display: flex;
     align-items: center;
     gap: var(--space-2);
-    padding: var(--space-2) var(--space-4);
+    padding: var(--space-2) var(--space-2);
 }
 
 .btn-star-count {
     display: flex;
     align-items: center;
-    padding: var(--space-2) var(--space-4);
+    padding: var(--space-2) var(--space-2);
     background-color: rgba(255, 255, 255, 0.15);
     font-weight: 600;
 }
