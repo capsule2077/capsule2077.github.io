@@ -500,13 +500,13 @@ a {
     display: flex;
     align-items: center;
     gap: var(--space-2);
-    padding: var(--space-2) var(--space-2);
+    padding: var(--space-2) var(--space-3);
 }
 
 .btn-star-count {
     display: flex;
     align-items: center;
-    padding: var(--space-2) var(--space-2);
+    padding: var(--space-2) var(--space-3);
     background-color: rgba(255, 255, 255, 0.15);
     font-weight: 600;
 }
